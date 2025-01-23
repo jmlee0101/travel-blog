@@ -1,0 +1,7 @@
+**/jquery-1.12.4.min.js
+**/remixicon.css
+**/animate.css
+
+# font 폴더 하위 모든 파일 또는 폴더
+font/**
+video/**

@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Gaegu&family=Indie+Flower&family=Hi+Melody&family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap");
+@import url("remixicon.css");
+@import url("grid.css");
+@import url("animate.css");
+
+body{
+    margin:0;
+    font-family: "Noto Sans KR", sans-serif;
+    background:url('../images/white_map.png') no-repeat 126px top, 
+               url('../images/background.gif') repeat-x left top;
+    color:#000;
+    font-size:15px;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+a:hover{
+    color:#555;
+}
+.serif{
+    font-family: "Noto Serif KR", serif;
+}
+.vintage{
+    font-family: 'Hey Vintage', serif;
+}
+.Gaegu {
+    font-family: 'Gaegu', serif;
+}
+.HiMelody {
+    font-family: "Hi Melody", serif;
+}
+.IndieFlower {
+    font-family: 'Indie Flower', serif;
+}
+.bg-f5 {
+    background-color: #f5f5f5;
+}
+.container{
+    width:1340px;
+}
+.text-align {
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+/************ HEADER START *************/
+header{
+   padding: 35px 30px 120PX;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30px;
+}
+nav .snsbox a{
+    margin-right:8px;   
+    font-size:20px;
+}
+.searchbox a{
+    font-size:20px;
+}
+nav a{
+    color:#757575;
+}
+nav a:hover{
+    color:#000;
+}
+nav a.act{
+    color:#000;
+}
+ul.main{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    text-transform: uppercase;
+    width:520px;
+    justify-content: space-between;
+}
+a.logo {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: url(../images/logo.png) no-repeat center;
+    background-size: 80%;
+    margin: 35px auto 0;
+    border-radius: 50%;
+}
+/************ HEADER END *************/
+
+
+/************ HERO SECTION START *************/
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 46px;
+    font-weight: 200;
+    margin: 0;
+}
+.hero p {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+.col-30 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.col-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.h-img {
+    margin-bottom: -4px;
+}
+.h-img img {
+    width: 100%;
+}
+.hero-box {
+    background: url("../images/pink_map.png") no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hero-box img {
+    width: 100%;
+}
+.hero-card {
+    position: relative;
+    padding: 85px 75px;
+    background: #fff;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.15);
+    top: -309px;
+}
+.hero-card h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+.hero-card p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.signbox {
+    text-align: right;
+}
+.signbox img {
+    width: 20%;
+}
+/************ HERO SECTION END *************/
+
+/************ VIDEO SECTION START *************/
+section.video {
+    background: url("../images/background2.gif") repeat-x;
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+.partner {
+    margin: 0 auto 50px;
+    width: 750px;
+}
+.partner>a{
+    display: block;
+    width: 25%;
+    height: 105px;
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+.partner>a:first-child {
+    border-left: 1px solid #d9d9d9;
+}
+.partner>a:nth-child(5) {
+    border-left: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+.partner>a:nth-child(n+6) { /* 6이상 */
+    border-bottom: 1px solid #d9d9d9;
+}
+.partner>a {
+    position: relative;
+}
+.partner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.partner>a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.7);
+    transition: all 300ms;
+}
+.partner>a:hover img {
+    filter: opacity(1);
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    z-index: 2;
+    border: 1px solid #ddd;
+}
+p.partner-title {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-block-start: 25px;
+}
+h1.partner-title {
+    font-weight: 400;
+    font-size: 50px;
+    margin-block-start: 10px;
+}
+.subscribe {
+    display: block;
+    width: 230px;
+    height: 50px;
+    background-color: #ff0000;
+    margin: 60px auto;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.subscribe i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+.vod {
+    margin-left: -3px;
+    margin-right: -3px;
+    background-color: #ffe9e4;
+    min-height:550px;
+}
+.vod-box {
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    width: 33.3333333%;
+    height:350px;
+}
+.myVideo {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 0;
+    left: 0;
+}
+.playBtn {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.playBtn::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid rgba(255, 255, 255, 0.6);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    transition: all 300ms;
+}
+.playBtn:hover {
+    border-color: #fff;
+}
+.playBtn:hover::after {
+    border-left-color: #fff;
+}
+.vod-box p {
+    position: absolute;
+    bottom: -50px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 300px;
+    left: calc(50% - 150px);
+}
+/************ VIDEO SECTION END *************/
+
+/************ BEST SECTION START *************/
+.best {
+    margin-top: 90px;
+}
+.best h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+a.viewall {
+    font-size: 20px;
+    color: #c95f5f;
+    text-decoration: underline;
+    font-weight: 200;
+}
+.best .container {
+    margin-top: 80px;
+}
+.best .col {
+    width: 50%;
+    height: 427px;
+    position: relative;
+}
+.best .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.best-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 45px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height:45px;
+    bottom: 50px;
+    left: calc(50% - 100px);
+    transition: all 300ms;
+}
+.best-link:hover {
+    background: rgba(255, 255, 255, 1);
+}
+/************ BEST SECTION END *************/
+
+/************ MAILING SECTION START *************/
+.mailing-form-box {
+    background-color: #ffe9e4;
+    padding-top: 55px;
+}
+.mailing-form-box p {
+    width: 270px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mailing-form-box form {
+    margin: 45px auto 0;
+    width: 430px;
+    padding-bottom: 50px;
+}
+.mailing-form-box input {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #d9d9d9;
+}
+.mailing-form-box input::placeholder {
+    color: #d9d9d9;
+}
+/************ MAILING SECTION END *************/
+
+/************ WORKME SECTION START *************/
+.workme {
+    padding-top: 80px;
+}
+
+        /* 반응형 정사각형 만들기 */
+.square {
+    width: 100%; /* 가로 너비 100% */
+    padding-top: 100%; /* 세로크기는 가로 크기의 100% */
+    position: relative;
+}
+.square-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.square-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.me-sign {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+.bg-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/map.png") no-repeat center;
+}
+.bg-map h3, .bg-map p {
+    width: 230px;
+    text-align: center;
+    border-bottom: 1px solid #c95f5f;
+    margin: 0;
+}
+.bg-map h3.current {
+    margin-top: 60px;
+}
+.bg-map h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.bg-map p {
+    font-weight: 300;
+}
+.bg-map>p:first-of-type {
+    border: none;
+}
+.next {
+    margin-top: 75px;
+}
+.next p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.bg-map i.ri-map-pin-2-fill {
+    color: #c95f5f;
+    font-size: 24px;
+    position: absolute;
+    top: 210px;
+    right: 280px;
+}
+.hr {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+}
+/************ WORKME SECTION END *************/
+
